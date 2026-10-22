@@ -22,7 +22,7 @@ Domain Manager → humanist.works → **Advanced DNS**. Add:
 | A     | @    | `76.76.21.21` (or the IP Vercel shows) |
 | CNAME | www  | the project CNAME Vercel shows (looks like `xxxx.vercel-dns-017.com`) |
 
-Do not change the nameservers. Email (MX) records for hello@humanist.works go in the same Advanced DNS panel later.
+Do not change the nameservers. Email (MX) records for info@humanist.works go in the same Advanced DNS panel later.
 
 ## Palette ("Werkplaats")
 
@@ -48,7 +48,7 @@ The copy is a first draft. These statements are promises and need to be true bef
 - "Four weeks, one robot, one task, a fixed fee" (pilot format)
 - "Cancel monthly" and "No lock-in"
 - "We reply within one working day"
-- `hello@humanist.works` must exist (set up mail on the domain first)
+- `info@humanist.works` must exist (set up mail on the domain first)
 - Use cases marked "Pilots open" vs "Exploring"
 
 ## Editing

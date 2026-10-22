@@ -375,10 +375,10 @@
         <div class="eyebrow">Talk to us</div>
         <h2>Start with one task.</h2>
         <p>Tell us the job you would hand to a robot tomorrow. We reply within one working day with an honest view on whether it can be done, with which machine, and what a four-week pilot would cost.</p>
-        <p class="big"><a href="mailto:hello@humanist.works">hello@humanist.works</a></p>
+        <p class="big"><a href="mailto:info@humanist.works">info@humanist.works</a></p>
         <p>Amsterdam, the Netherlands</p>
       </div>
-      <form action="mailto:hello@humanist.works" method="post" enctype="text/plain" onsubmit="return prepMail(this)">
+      <form action="mailto:info@humanist.works" method="post" enctype="text/plain" onsubmit="return prepMail(this)">
         <label for="name">Your name</label>
         <input id="name" name="name" type="text" autocomplete="name" required>
         <label for="company">Company</label>
@@ -398,7 +398,7 @@
 <footer>
   <div class="wrap">
     <a class="brand" href="#top"><span class="dot"></span>HUMANIST <span class="sub">AI</span></a>
-    <div>© 2026 Humanist AI · Amsterdam · <a href="mailto:hello@humanist.works">hello@humanist.works</a></div>
+    <div>© 2026 Humanist AI · Amsterdam · <a href="mailto:info@humanist.works">info@humanist.works</a></div>
   </div>
 </footer>
 
@@ -415,7 +415,7 @@
   function prepMail(f){
     var subject='Pilot request from '+(f.name.value||'website');
     var body='Name: '+f.name.value+'\nCompany: '+f.company.value+'\nEmail: '+f.email.value+'\n\nTask:\n'+f.task.value;
-    window.location.href='mailto:hello@humanist.works?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    window.location.href='mailto:info@humanist.works?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
     return false;
   }
 </script>
