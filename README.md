@@ -1,10 +1,12 @@
 # Humanist AI — humanist.works
 
-Version 1 of the robots-as-a-service website for Humanist AI. One static page, no build step, no dependencies beyond Google Fonts (Inter).
+Website for Humanist AI: humanoids as a service. One static page, no build step, no dependencies beyond Google Fonts.
 
 ## Files
 
 - `index.html` — the whole site (HTML, CSS and a few lines of JS in one file)
+- `assets/hero-humanoid.jpg|webp` — hero render (original humanoid, generated, no third-party IP)
+- `assets/band-detail.jpg|webp` — torso crop of the same render for the fleet band
 - `README.md` — this file
 
 ## Deploy on Vercel
@@ -24,29 +26,37 @@ Domain Manager → humanist.works → **Advanced DNS**. Add:
 
 Do not change the nameservers. Email (MX) records for hello@humanist.works go in the same Advanced DNS panel later.
 
-## Palette ("Werkplaats")
+## Design system ("Showroom")
 
-| Role            | Hex       |
-|-----------------|-----------|
-| Background      | `#F4F2EE` |
-| Background 2    | `#ECEAE5` |
-| Ink (text)      | `#1B1D21` |
-| Ink 2           | `#4A4F57` |
-| Aluminium line  | `#C9CDD3` |
-| Aluminium fill  | `#E6E8EC` |
-| Accent          | `#FF5A1F` |
-| Accent (hover)  | `#D9430C` |
-| Dark section    | `#0F1114` |
+Black, steel, aluminium and chrome. Matte surfaces, one chrome gradient for display type and the primary button, no colour accent.
+
+| Role                | Hex / value |
+|---------------------|-------------|
+| Background          | `#050607` |
+| Background 2        | `#0B0D10` |
+| Surface             | `#121417` → `#0B0D10` (card gradient) |
+| Line                | `#23272D`, hover `#2E333A` |
+| Steel (labels)      | `#8E939B` |
+| Aluminium           | `#C9CDD3`, light `#E6E8EC` |
+| Chrome gradient     | `#F6F7F9` → `#DADDE2` → `#9DA3AB` (display type, primary button) |
+| Text                | `#ECEDEF`, secondary `#A6ABB3`, muted `#6E737B` |
+| Display font        | Inter Tight 600, tracking -0.045em |
+| Body font           | Inter 400/500/600 |
+| Label font          | JetBrains Mono 500, 11–12px, tracking 0.14em, uppercase |
 
 All colours are CSS variables at the top of `index.html`.
+
+## Imagery
+
+The hero render is an original humanoid generated for this site (Higgsfield, Nano Banana 2, 896×1200). It is not a Tesla Optimus or any other manufacturer's robot: third-party renders are copyrighted and would suggest an affiliation that does not exist. For higher resolution or more angles, regenerate at 2k/4k with the same prompt (in the project notes) and replace the files in `assets/`.
 
 ## Copy to confirm before launch
 
 The copy is a first draft. These statements are promises and need to be true before the site goes live:
 
-- "Live in days" and "Site survey, install and training included"
-- "Four weeks, one robot, one task, a fixed fee" (pilot format)
-- "Cancel monthly" and "No lock-in"
+- "Installed and run by us", "Install · monitor · maintain"
+- "Certified units", "Safety-tested before deployment", "Swap guarantee"
+- "One unit, one task, a fixed fee" (pilot format), "Cancel monthly", "No lock-in"
 - "We reply within one working day"
 - `hello@humanist.works` must exist (set up mail on the domain first)
 - Use cases marked "Pilots open" vs "Exploring"

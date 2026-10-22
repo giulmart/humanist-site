@@ -3,172 +3,208 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Humanist · Robots that work for people</title>
-<meta name="description" content="Humanist rents task-specific robots to businesses in the Netherlands. Pay per task, no capex, humans in charge.">
-<meta property="og:title" content="Humanist · Robots that work for people">
-<meta property="og:description" content="Task-specific robots, rented by the job. Installed, run and maintained by Humanist. You keep the people; the robots take the repetition.">
+<title>Humanist · Humanoids, as a service</title>
+<meta name="description" content="Humanist puts general-purpose humanoid robots to work in your operation. Rented by the month, run by us, led by your people. Amsterdam.">
+<meta property="og:title" content="Humanist · Humanoids, as a service">
+<meta property="og:description" content="General-purpose humanoid robots, rented by the month, run by Humanist, led by your people.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://humanist.works/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B1D21'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23FF5A1F'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://humanist.works/assets/hero-humanoid.jpg">
+<meta name="theme-color" content="#050607">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050607'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%23E6E8EC' stroke-width='5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F4F2EE;
-    --bg-2:#ECEAE5;
-    --ink:#1B1D21;
-    --ink-2:#4A4F57;
-    --ink-3:#7A8089;
+    --bg:#050607;
+    --bg-2:#0B0D10;
+    --surface:#121417;
+    --surface-2:#181B1F;
+    --line:#23272D;
+    --line-2:#2E333A;
+    --steel:#8E939B;
     --alu:#C9CDD3;
     --alu-2:#E6E8EC;
-    --card:#FFFFFF;
-    --accent:#FF5A1F;
-    --accent-ink:#D9430C;
-    --dark:#0F1114;
-    --dark-2:#1B1D21;
-    --dark-line:#2A2D33;
-    --on-dark:#ECEDEF;
-    --on-dark-2:#8E939B;
-    --radius:18px;
-    --max:1180px;
-    --font:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --chrome-a:#F6F7F9;
+    --chrome-b:#9DA3AB;
+    --chrome-c:#DADDE2;
+    --ink:#ECEDEF;
+    --ink-2:#A6ABB3;
+    --ink-3:#6E737B;
+    --radius:20px;
+    --max:1200px;
+    --head:"Inter Tight","Inter",-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --body:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:17px}
+  html{scroll-behavior:smooth;background:var(--bg)}
+  body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:17px;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
-  img,svg{display:block;max-width:100%}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
-  h1,h2,h3{letter-spacing:-.02em;line-height:1.08;font-weight:700}
-  h1{font-size:clamp(40px,6.2vw,76px)}
-  h2{font-size:clamp(30px,4vw,46px)}
-  h3{font-size:20px;letter-spacing:-.01em}
-  p.lead{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:620px}
-  .muted{color:var(--ink-2)}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:16px;border:1.5px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease;cursor:pointer}
+  img,svg,picture{display:block;max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:var(--head);letter-spacing:-.035em;line-height:1.02;font-weight:600}
+  h1{font-size:clamp(46px,7vw,96px);letter-spacing:-.045em}
+  h2{font-size:clamp(34px,4.4vw,58px)}
+  h3{font-size:21px;letter-spacing:-.02em;font-weight:600}
+  .chrome{background:linear-gradient(180deg,var(--chrome-a) 0%,var(--chrome-c) 45%,var(--chrome-b) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+  .lead{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:600px;line-height:1.5}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .15s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;cursor:pointer;white-space:nowrap}
   .btn:active{transform:translateY(1px)}
-  .btn-primary{background:var(--accent);color:#fff}
-  .btn-primary:hover{background:var(--accent-ink)}
-  .btn-ghost{background:transparent;border-color:var(--alu);color:var(--ink)}
-  .btn-ghost:hover{border-color:var(--ink)}
-  .btn-light{background:var(--on-dark);color:var(--ink)}
-  .btn-light:hover{background:#fff}
+  .btn-chrome{background:linear-gradient(180deg,#F6F7F9 0%,#D5D9DE 55%,#B3B8C0 100%);color:#0A0B0D;box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 10px 30px rgba(0,0,0,.5)}
+  .btn-chrome:hover{background:linear-gradient(180deg,#FFFFFF 0%,#E3E6EA 55%,#C4C9D0 100%)}
+  .btn-ghost{background:rgba(255,255,255,.03);border-color:var(--line-2);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--alu);background:rgba(255,255,255,.06)}
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--line-2) 20%,var(--alu) 50%,var(--line-2) 80%,transparent)}
 
   /* nav */
-  header{position:sticky;top:0;z-index:50;background:rgba(244,242,238,.85);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--alu-2)}
-  nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;font-size:15px}
-  .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--accent)}
-  .brand .sub{font-weight:500;letter-spacing:.14em;color:var(--ink-3)}
-  .links{display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink-2)}
+  header{position:sticky;top:0;z-index:50;background:rgba(5,6,7,.72);backdrop-filter:saturate(1.2) blur(14px);-webkit-backdrop-filter:saturate(1.2) blur(14px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--head);font-weight:700;letter-spacing:.18em;font-size:14px;color:var(--alu-2)}
+  .brand .ring{width:14px;height:14px;border-radius:50%;border:3px solid var(--alu-2);box-shadow:0 0 0 1px #000,0 0 18px rgba(230,232,236,.25)}
+  .brand .sub{font-weight:500;color:var(--steel)}
+  .links{display:flex;gap:30px;font-size:14px;font-weight:500;color:var(--ink-2)}
   .links a:hover{color:var(--ink)}
   .nav-cta{display:flex;align-items:center;gap:12px}
-  .burger{display:none;width:44px;height:44px;border:1px solid var(--alu);border-radius:12px;background:transparent;align-items:center;justify-content:center;cursor:pointer}
+  .nav-cta .btn{padding:11px 18px;font-size:14px}
+  .burger{display:none;width:44px;height:44px;border:1px solid var(--line-2);border-radius:12px;background:transparent;align-items:center;justify-content:center;cursor:pointer}
   .burger span{display:block;width:18px;height:2px;background:var(--ink);box-shadow:0 -6px 0 var(--ink),0 6px 0 var(--ink)}
-  .mobile-menu{display:none;border-top:1px solid var(--alu-2);padding:12px 0 20px}
-  .mobile-menu a{display:block;padding:12px 0;font-weight:500;border-bottom:1px solid var(--alu-2)}
+  .mobile-menu{display:none;border-top:1px solid var(--line);padding:10px 0 18px}
+  .mobile-menu a{display:block;padding:13px 0;font-weight:500;border-bottom:1px solid var(--line)}
   .mobile-menu.open{display:block}
 
   /* hero */
-  .hero{padding:72px 0 56px}
-  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-  .hero .eyebrow{margin-bottom:18px}
-  .hero h1{margin-bottom:22px}
-  .hero h1 em{font-style:normal;color:var(--accent)}
-  .hero .lead{margin-bottom:32px}
-  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-  .hero-note{font-size:14px;color:var(--ink-3)}
-  .hero-art{position:relative;border-radius:var(--radius);background:linear-gradient(160deg,#ECEDEF 0%,#D7DADF 55%,#C9CDD3 100%);border:1px solid var(--alu);aspect-ratio:1/1;overflow:hidden}
-  .hero-art svg{position:absolute;inset:0;width:100%;height:100%}
-  .hero-art .tag{position:absolute;left:18px;bottom:18px;background:rgba(27,29,33,.92);color:var(--on-dark);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
+  .hero{position:relative;overflow:hidden;padding:60px 0 0;min-height:calc(100vh - 72px)}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(900px 600px at 72% 45%,rgba(201,205,211,.10),transparent 60%),
+    radial-gradient(600px 400px at 20% 10%,rgba(201,205,211,.05),transparent 60%);pointer-events:none}
+  .grid-lines{position:absolute;inset:0;background-image:linear-gradient(to right,rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.035) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);pointer-events:none}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end;min-height:calc(100vh - 132px)}
+  .hero-copy{padding:40px 0 80px}
+  .hero-copy > .mono{margin-bottom:26px;display:flex;align-items:center;gap:12px}
+  .hero-copy > .mono::before{content:"";width:28px;height:1px;background:var(--steel)}
+  .hero h1{margin-bottom:26px;max-width:12ch}
+  .hero .lead{margin-bottom:36px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+  .hero-spec{display:grid;grid-template-columns:repeat(3,auto);gap:24px;justify-content:start}
+  .hero-spec div{display:flex;flex-direction:column;gap:4px}
+  .hero-spec .mono{font-size:11px;letter-spacing:.12em}
+  .hero-spec b{font-family:var(--head);font-weight:600;font-size:16px;color:var(--alu-2);letter-spacing:-.01em}
+  .hero-art{position:relative;align-self:end;margin-bottom:-2px}
+  .hero-art img{width:100%;height:auto;max-height:calc(100vh - 160px);object-fit:contain;object-position:bottom center;
+    -webkit-mask-image:radial-gradient(ellipse 56% 66% at 50% 56%,#000 42%,transparent 96%);mask-image:radial-gradient(ellipse 56% 66% at 50% 56%,#000 42%,transparent 96%)}
+  .hero-art::after{content:"";position:absolute;left:15%;right:15%;bottom:0;height:90px;background:radial-gradient(ellipse at center bottom,rgba(230,232,236,.12),transparent 70%);pointer-events:none}
+  .hero-art .tag{position:absolute;right:0;bottom:44px;display:flex;flex-direction:column;gap:6px;z-index:2;text-align:right}
+  .hero-art .tag span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}
+  .hero-art .tag b{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--alu-2);font-weight:500}
 
-  /* proof bar */
-  .bar{border-top:1px solid var(--alu);border-bottom:1px solid var(--alu);background:var(--bg-2)}
-  .bar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-  .bar .cell{padding:22px 24px 22px 0;border-right:1px solid var(--alu)}
-  .bar .cell:last-child{border-right:0}
-  .bar .cell + .cell{padding-left:24px}
-  .bar b{display:block;font-size:17px;font-weight:600;margin-bottom:2px}
-  .bar span{font-size:14px;color:var(--ink-2)}
+  /* ticker */
+  .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);overflow:hidden;white-space:nowrap}
+  .ticker-track{display:inline-flex;gap:0;animation:tick 48s linear infinite;padding:16px 0}
+  .ticker span{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);padding:0 28px;border-right:1px solid var(--line-2)}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 
-  section{padding:96px 0}
-  .sec-head{max-width:720px;margin-bottom:48px}
-  .sec-head .eyebrow{margin-bottom:14px}
-  .sec-head h2{margin-bottom:16px}
+  section{padding:110px 0}
+  .sec-head{max-width:760px;margin-bottom:56px}
+  .sec-head .mono{margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .sec-head .mono::before{content:"";width:28px;height:1px;background:var(--steel)}
+  .sec-head h2{margin-bottom:18px}
 
   /* cards */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .card{background:var(--card);border:1px solid var(--alu-2);border-radius:var(--radius);padding:30px 28px;position:relative}
-  .card .num{font-size:13px;font-weight:600;color:var(--ink-3);letter-spacing:.1em;margin-bottom:22px}
-  .card h3{margin-bottom:10px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;position:relative;transition:border-color .2s ease,transform .2s ease}
+  .card:hover{border-color:var(--line-2);transform:translateY(-2px)}
+  .card::before{content:"";position:absolute;left:24px;right:24px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(230,232,236,.35),transparent)}
+  .card .mono{margin-bottom:26px}
+  .card h3{margin-bottom:12px;color:var(--alu-2)}
   .card p{color:var(--ink-2);font-size:16px}
-  .card .ico{width:44px;height:44px;border-radius:12px;background:var(--alu-2);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-  .card .ico svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  /* fleet band */
+  .band{position:relative;height:560px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:#000}
+  .band picture{position:absolute;right:0;top:0;bottom:0;width:60%}
+  .band img{width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.95}
+  .band .veil{position:absolute;inset:0;background:linear-gradient(90deg,#050607 0%,#050607 36%,rgba(5,6,7,.75) 50%,rgba(5,6,7,.15) 72%,rgba(5,6,7,0) 100%)}
+  .band .wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center}
+  .band h2{max-width:14ch;margin-bottom:18px}
+  .band p{max-width:520px;color:var(--ink-2);font-size:18px;margin-bottom:30px}
+  .band-stats{display:grid;grid-template-columns:repeat(3,auto);gap:36px;justify-content:start}
+  .band-stats b{display:block;font-family:var(--head);font-weight:600;font-size:18px;color:var(--alu-2);letter-spacing:-.01em;margin-bottom:4px}
+  .band-stats span{font-size:14px;color:var(--ink-2)}
 
   /* steps */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
-  .step{padding:28px 0 0;border-top:2px solid var(--ink)}
-  .step .k{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:14px;margin-bottom:18px}
-  .step h3{margin-bottom:10px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .step{padding:30px 0 0;border-top:1px solid var(--line-2);position:relative}
+  .step::before{content:"";position:absolute;top:-1px;left:0;width:56px;height:1px;background:var(--alu-2)}
+  .step .k{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--steel);margin-bottom:22px;display:block}
+  .step h3{margin-bottom:12px;color:var(--alu-2)}
   .step p{color:var(--ink-2);font-size:16px}
 
   /* use cases */
   .uses{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .use{background:var(--card);border:1px solid var(--alu-2);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:10px;min-height:170px}
-  .use .pill{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);background:#FFE9DF;padding:5px 10px;border-radius:999px}
-  .use .pill.soon{color:var(--ink-2);background:var(--alu-2)}
-  .use h3{font-size:18px}
+  .use{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px;min-height:180px;transition:border-color .2s ease}
+  .use:hover{border-color:var(--line-2)}
+  .use .pill{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--alu-2);border:1px solid var(--line-2);padding:6px 10px;border-radius:999px}
+  .use .pill.soon{color:var(--steel)}
+  .use h3{font-size:19px;color:var(--alu-2)}
   .use p{color:var(--ink-2);font-size:15px}
 
-  /* dark manifesto */
-  .dark{background:var(--dark);color:var(--on-dark)}
-  .dark .eyebrow{color:var(--accent)}
-  .dark h2{color:#fff}
-  .manifesto{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
-  .manifesto p{color:var(--on-dark-2);font-size:18px;margin-bottom:18px}
-  .manifesto p strong{color:var(--on-dark);font-weight:600}
-  .principles{display:grid;gap:0;border-top:1px solid var(--dark-line)}
-  .principle{padding:22px 0;border-bottom:1px solid var(--dark-line);display:grid;grid-template-columns:40px 1fr;gap:14px}
-  .principle .n{color:var(--accent);font-weight:700;font-size:14px;padding-top:3px}
-  .principle h3{font-size:17px;color:#fff;margin-bottom:4px}
+  /* manifesto */
+  .manifesto{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start}
+  .manifesto p{color:var(--ink-2);font-size:18px;margin-bottom:18px}
+  .manifesto p strong{color:var(--ink);font-weight:600}
+  .principles{border-top:1px solid var(--line-2)}
+  .principle{padding:24px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:48px 1fr;gap:14px}
+  .principle .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--steel);padding-top:4px}
+  .principle h3{font-size:17px;color:var(--alu-2);margin-bottom:4px}
   .principle p{font-size:15px;margin:0}
 
   /* contact */
-  .contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .contact h2{margin-bottom:16px}
-  form{background:var(--card);border:1px solid var(--alu-2);border-radius:var(--radius);padding:28px}
-  label{display:block;font-size:13px;font-weight:600;color:var(--ink-2);margin:0 0 6px}
-  input,textarea,select{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--alu);border-radius:12px;background:#fff;color:var(--ink);margin-bottom:16px}
-  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ink)}
-  textarea{min-height:110px;resize:vertical}
-  .form-note{font-size:13px;color:var(--ink-3);margin-top:10px}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .contact h2{margin-bottom:18px}
+  form{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+  label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);margin:0 0 8px}
+  input,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line-2);border-radius:12px;background:#0A0B0D;color:var(--ink);margin-bottom:18px}
+  input::placeholder,textarea::placeholder{color:var(--ink-3)}
+  input:focus,textarea:focus{outline:none;border-color:var(--alu)}
+  textarea{min-height:120px;resize:vertical}
+  .form-note{font-size:13px;color:var(--ink-3);margin-top:12px}
   .contact-side p{color:var(--ink-2);margin-bottom:22px;max-width:460px}
-  .contact-side .big{font-size:22px;font-weight:600;color:var(--ink);word-break:break-all}
+  .contact-side .big{font-family:var(--head);font-size:24px;font-weight:600;color:var(--alu-2);word-break:break-all;letter-spacing:-.01em}
 
-  footer{border-top:1px solid var(--alu);padding:36px 0;font-size:14px;color:var(--ink-3)}
+  footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px;color:var(--ink-3)}
   footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
-  footer .brand{font-size:13px}
+  footer .brand{font-size:12px}
 
-  @media (max-width:960px){
+  @media (max-width:1000px){
     .hero-grid,.manifesto,.contact{grid-template-columns:1fr}
+    .hero{min-height:0}
+    .hero-grid{min-height:0}
+    .hero-copy{padding:20px 0 40px}
+    .hero-art img{max-height:none;margin-top:-24px}
     .cards,.steps,.uses{grid-template-columns:1fr 1fr}
-    .bar .wrap{grid-template-columns:1fr 1fr}
-    .bar .cell{border-right:0;border-bottom:1px solid var(--alu);padding:18px 0}
-    .bar .cell + .cell{padding-left:0}
-    .bar .cell:nth-child(odd){border-right:1px solid var(--alu);padding-right:20px}
-    .bar .cell:nth-child(even){padding-left:20px}
-    .bar .cell:nth-last-child(-n+2){border-bottom:0}
+    .band{height:600px}
+    .band picture{width:70%}
+    .band-stats{grid-template-columns:1fr 1fr}
   }
   @media (max-width:640px){
     body{font-size:16px}
     .links,.nav-cta .btn-ghost{display:none}
     .burger{display:flex}
-    .hero{padding:48px 0 40px}
     .cards,.steps,.uses{grid-template-columns:1fr}
-    section{padding:64px 0}
-    .hero-art{aspect-ratio:4/3}
+    section{padding:72px 0}
+    .band{height:auto;min-height:0;padding-bottom:40px}
+    .band picture{width:100%;height:340px;bottom:auto}
+    .band img{object-position:center 20%}
+    .band .veil{background:linear-gradient(180deg,rgba(5,6,7,.1) 0px,rgba(5,6,7,.35) 200px,rgba(5,6,7,.96) 320px,#050607 345px)}
+    .band .wrap{position:relative;padding-top:330px}
+    .band .wrap{justify-content:flex-end;padding-bottom:36px}
+    .band-stats{grid-template-columns:1fr;gap:16px}
+    .hero-spec{grid-template-columns:1fr;gap:14px}
+    .hero-spec div{flex-direction:row;align-items:baseline;gap:12px}
+    .hero-spec b{min-width:120px}
   }
 </style>
 </head>
@@ -177,24 +213,26 @@
 <header>
   <div class="wrap">
     <nav>
-      <a class="brand" href="#top" aria-label="Humanist home"><span class="dot"></span>HUMANIST <span class="sub">AI</span></a>
+      <a class="brand" href="#top" aria-label="Humanist home"><span class="ring"></span>HUMANIST <span class="sub">AI</span></a>
       <div class="links">
         <a href="#what">What we do</a>
+        <a href="#fleet">The fleet</a>
         <a href="#how">How it works</a>
         <a href="#uses">Use cases</a>
         <a href="#why">Why Humanist</a>
       </div>
       <div class="nav-cta">
-        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        <a class="btn btn-ghost" href="#contact">Request a pilot</a>
         <button class="burger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu(this)"><span></span></button>
       </div>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#what" onclick="closeMenu()">What we do</a>
+      <a href="#fleet" onclick="closeMenu()">The fleet</a>
       <a href="#how" onclick="closeMenu()">How it works</a>
       <a href="#uses" onclick="closeMenu()">Use cases</a>
       <a href="#why" onclick="closeMenu()">Why Humanist</a>
-      <a href="#contact" onclick="closeMenu()">Talk to us</a>
+      <a href="#contact" onclick="closeMenu()">Request a pilot</a>
     </div>
   </div>
 </header>
@@ -203,73 +241,37 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="grid-lines" aria-hidden="true"></div>
     <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Robots as a service · Netherlands</div>
-        <h1>Robots that work <em>for people.</em></h1>
-        <p class="lead">Humanist rents task-specific robots to businesses, by the week or by the job. We install them, run them and maintain them. You keep your people; the robots take the repetition.</p>
+      <div class="hero-copy">
+        <div class="mono">Humanoids as a service · Amsterdam</div>
+        <h1><span class="chrome">Humanoids,</span><br>as a service.</h1>
+        <p class="lead">Humanist puts general-purpose humanoid robots to work in your operation. Rented by the month, installed and run by us, led by your people.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Start a pilot</a>
-          <a class="btn btn-ghost" href="#how">How it works</a>
+          <a class="btn btn-chrome" href="#contact">Request a pilot</a>
+          <a class="btn btn-ghost" href="#fleet">See the fleet</a>
         </div>
-        <div class="hero-note">No capital expenditure. No engineering team. Cancel monthly.</div>
+        <div class="hero-spec">
+          <div><b>Monthly</b><span class="mono">Rental, no capex</span></div>
+          <div><b>Run by Humanist</b><span class="mono">Install · monitor · maintain</span></div>
+          <div><b>Human-led</b><span class="mono">Your lead, your floor</span></div>
+        </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="alu" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#F7F8FA"/>
-              <stop offset="1" stop-color="#B9BEC6"/>
-            </linearGradient>
-            <linearGradient id="alu2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#E9EBEE"/>
-              <stop offset="1" stop-color="#AEB3BB"/>
-            </linearGradient>
-          </defs>
-          <!-- floor grid -->
-          <g stroke="#B5BAC2" stroke-width="1" opacity=".55">
-            <line x1="0" y1="470" x2="600" y2="470"/><line x1="0" y1="510" x2="600" y2="510"/><line x1="0" y1="550" x2="600" y2="550"/>
-            <line x1="60" y1="440" x2="0" y2="600"/><line x1="180" y1="440" x2="140" y2="600"/><line x1="300" y1="440" x2="300" y2="600"/><line x1="420" y1="440" x2="460" y2="600"/><line x1="540" y1="440" x2="600" y2="600"/>
-          </g>
-          <!-- base -->
-          <rect x="170" y="400" width="220" height="40" rx="10" fill="url(#alu2)" stroke="#8E939B"/>
-          <rect x="230" y="340" width="100" height="70" rx="14" fill="url(#alu)" stroke="#8E939B"/>
-          <!-- lower arm: shoulder (280,350) to elbow (200,190) -->
-          <line x1="280" y1="350" x2="200" y2="190" stroke="#8E939B" stroke-width="40" stroke-linecap="round"/>
-          <line x1="280" y1="350" x2="200" y2="190" stroke="url(#alu)" stroke-width="36" stroke-linecap="round"/>
-          <!-- upper arm: elbow (200,190) to wrist (400,150) -->
-          <line x1="200" y1="190" x2="400" y2="150" stroke="#8E939B" stroke-width="34" stroke-linecap="round"/>
-          <line x1="200" y1="190" x2="400" y2="150" stroke="url(#alu)" stroke-width="30" stroke-linecap="round"/>
-          <!-- joints -->
-          <circle cx="280" cy="350" r="26" fill="#DADDE2" stroke="#8E939B"/><circle cx="280" cy="350" r="8" fill="#1B1D21"/>
-          <circle cx="200" cy="190" r="24" fill="#DADDE2" stroke="#8E939B"/><circle cx="200" cy="190" r="7" fill="#1B1D21"/>
-          <circle cx="400" cy="150" r="20" fill="#DADDE2" stroke="#8E939B"/><circle cx="400" cy="150" r="6" fill="#1B1D21"/>
-          <!-- wrist link and gripper, pointing down -->
-          <line x1="400" y1="150" x2="400" y2="205" stroke="#8E939B" stroke-width="20" stroke-linecap="round"/>
-          <line x1="400" y1="150" x2="400" y2="205" stroke="url(#alu)" stroke-width="16" stroke-linecap="round"/>
-          <rect x="370" y="200" width="60" height="16" rx="6" fill="#DADDE2" stroke="#8E939B"/>
-          <rect x="370" y="212" width="13" height="44" rx="5" fill="#C9CDD3" stroke="#8E939B"/>
-          <rect x="417" y="212" width="13" height="44" rx="5" fill="#C9CDD3" stroke="#8E939B"/>
-          <!-- the human accent: an orange object held by the gripper -->
-          <circle cx="400" cy="244" r="14" fill="#FF5A1F"/>
-          <!-- status light -->
-          <circle cx="280" cy="372" r="5" fill="#FF5A1F"/>
-          <!-- label plate -->
-          <rect x="238" y="410" width="84" height="18" rx="4" fill="#1B1D21" opacity=".85"/>
-          <text x="280" y="423" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ECEDEF">HUMANIST</text>
-        </svg>
-        <div class="tag">Unit 01 · Pilot fleet</div>
+      <div class="hero-art">
+        <div class="tag"><span>Unit</span><b>H-01 · Pilot fleet</b></div>
+        <picture>
+          <source srcset="assets/hero-humanoid.webp" type="image/webp">
+          <img src="assets/hero-humanoid.jpg" width="816" height="1135" alt="A general-purpose humanoid robot in brushed aluminium standing in a dark studio" fetchpriority="high">
+        </picture>
       </div>
     </div>
   </section>
 
-  <!-- PROOF BAR -->
-  <div class="bar">
-    <div class="wrap">
-      <div class="cell"><b>Pay per task</b><span>Weekly or per-job pricing, no purchase</span></div>
-      <div class="cell"><b>Live in days</b><span>Site survey, install and training included</span></div>
-      <div class="cell"><b>Humans in charge</b><span>Every robot works under your team lead</span></div>
-      <div class="cell"><b>Cancel monthly</b><span>Scale up, swap models or stop</span></div>
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Tote handling</span><span>Machine tending</span><span>Night-shift logistics</span><span>Pick and place</span><span>Inspection rounds</span><span>Back-of-store replenishment</span><span>Kitting and packing</span><span>Line feeding</span>
+      <span>Tote handling</span><span>Machine tending</span><span>Night-shift logistics</span><span>Pick and place</span><span>Inspection rounds</span><span>Back-of-store replenishment</span><span>Kitting and packing</span><span>Line feeding</span>
     </div>
   </div>
 
@@ -277,92 +279,112 @@
   <section id="what">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow">What we do</div>
-        <h2>One robot, one job, one monthly bill.</h2>
-        <p class="lead">We are not a robot manufacturer. We pick the right machine for your task from the makers we trust, then make it work on your floor.</p>
+        <div class="mono">What we do</div>
+        <h2>One humanoid. One shift. <span class="chrome">One monthly bill.</span></h2>
+        <p class="lead">We are not a robot manufacturer. We select, certify and operate humanoids from the makers we trust, so you get the work without the engineering department.</p>
       </div>
       <div class="cards">
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/><path d="M3 12h18"/></svg></div>
+          <div class="mono">01 · Rent</div>
           <h3>Rent</h3>
-          <p>Task-specific robots by the week, month or job. Cleaning, moving, delivering, inspecting. The robot is ours; the work is yours.</p>
+          <p>General-purpose humanoids by the month. Handling, tending, moving, inspecting. The robot stays on our balance sheet; the work goes on yours.</p>
         </div>
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+          <div class="mono">02 · Run</div>
           <h3>Run</h3>
-          <p>We survey the site, install, train your team, monitor remotely and maintain. If a unit fails, we swap it. You never call a hotline in another time zone.</p>
+          <p>Site survey, installation, task training, remote monitoring and maintenance. A unit that fails is swapped, not debugged on your floor.</p>
         </div>
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l6-6"/><circle cx="14" cy="10" r="6"/><path d="M14 7v6M11 10h6"/></svg></div>
+          <div class="mono">03 · Match</div>
           <h3>Match</h3>
-          <p>Independent advice on which robot fits which job, and honest answers when none does yet. We test the machines so you do not have to.</p>
+          <p>Independent advice on which platform fits which job, and an honest answer when none does yet. We test the machines so you do not have to.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FLEET BAND -->
+  <div class="band" id="fleet">
+    <picture>
+      <source srcset="assets/band-detail.webp" type="image/webp">
+      <img src="assets/band-detail.jpg" width="896" height="384" alt="Close-up of a humanoid robot torso and hands in brushed aluminium" loading="lazy">
+    </picture>
+    <div class="veil"></div>
+    <div class="wrap">
+      <div class="mono" style="margin-bottom:18px">The fleet</div>
+      <h2><span class="chrome">Manufacturer-independent.</span><br>Certified for your floor.</h2>
+      <p>Every unit in the Humanist fleet is sourced from a leading humanoid maker, tested on real tasks and certified for safety before it is sent to a customer.</p>
+      <div class="band-stats">
+        <div><b>Certified units</b><span>Safety-tested before deployment</span></div>
+        <div><b>Remote monitoring</b><span>Every shift, every unit</span></div>
+        <div><b>Swap guarantee</b><span>A failing unit is replaced</span></div>
+      </div>
+    </div>
+  </div>
+
   <!-- HOW IT WORKS -->
-  <section id="how" style="background:var(--bg-2);border-top:1px solid var(--alu-2);border-bottom:1px solid var(--alu-2)">
+  <section id="how">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow">How it works</div>
-        <h2>From first call to a working robot in three steps.</h2>
+        <div class="mono">How it works</div>
+        <h2>From first call to a working humanoid <span class="chrome">in three steps.</span></h2>
       </div>
       <div class="steps">
         <div class="step">
-          <div class="k">1</div>
+          <span class="k">Step 01</span>
           <h3>Tell us the task</h3>
-          <p>A 20-minute call and a short site visit. We look at the floor, the hours, the people and the mess. If a robot is not the answer, we say so.</p>
+          <p>A 20-minute call and a site visit. We look at the floor, the hours, the people and the work. If a humanoid is not the answer yet, we say so.</p>
         </div>
         <div class="step">
-          <div class="k">2</div>
+          <span class="k">Step 02</span>
           <h3>Run a paid pilot</h3>
-          <p>Four weeks, one robot, one task, a fixed fee. We install it, train your lead and measure hours saved and quality delivered.</p>
+          <p>One unit, one task, a fixed fee. We install it, train your lead, and measure hours delivered and quality against your baseline.</p>
         </div>
         <div class="step">
-          <div class="k">3</div>
+          <span class="k">Step 03</span>
           <h3>Scale or stop</h3>
-          <p>Keep it on a monthly plan, add units, switch to a better model when one appears, or hand it back. No lock-in either way.</p>
+          <p>Keep it on a monthly plan, add units, move to a newer platform when one earns it, or hand it back. No lock-in either way.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- USE CASES -->
-  <section id="uses">
+  <section id="uses" style="padding-top:0">
     <div class="wrap">
+      <div class="rule" style="margin-bottom:110px"></div>
       <div class="sec-head">
-        <div class="eyebrow">Use cases</div>
-        <h2>Repetitive, heavy or hazardous. Those first.</h2>
-        <p class="lead">We start where robots already earn their keep and the business case is measurable within a month.</p>
+        <div class="mono">Use cases</div>
+        <h2>Repetitive, heavy or hazardous. <span class="chrome">Those first.</span></h2>
+        <p class="lead">We start where humanoids already earn their keep and the business case is measurable within a month.</p>
       </div>
       <div class="uses">
-        <div class="use"><span class="pill">Pilots open</span><h3>Floor cleaning</h3><p>Warehouses, offices, car parks and retail floors, scrubbed overnight without a night shift.</p></div>
-        <div class="use"><span class="pill">Pilots open</span><h3>Internal logistics</h3><p>Totes, pallets and carts moved between stations in warehouses and workshops.</p></div>
-        <div class="use"><span class="pill">Pilots open</span><h3>Hospitality delivery</h3><p>Trays, room service and bussing in hotels and large restaurants during peak hours.</p></div>
-        <div class="use"><span class="pill soon">Exploring</span><h3>Construction</h3><p>Layout marking, drilling and material transport on sites that struggle to find hands.</p></div>
-        <div class="use"><span class="pill soon">Exploring</span><h3>Greenhouses</h3><p>Harvest support, scouting and transport in Dutch horticulture.</p></div>
-        <div class="use"><span class="pill soon">Exploring</span><h3>Inspection and security</h3><p>Patrols, meter reading and inspection rounds in plants, terminals and data centres.</p></div>
+        <div class="use"><span class="pill">Pilots open</span><h3>Warehouse logistics</h3><p>Totes, cartons and carts moved between stations, overnight and at peak.</p></div>
+        <div class="use"><span class="pill">Pilots open</span><h3>Machine tending</h3><p>Loading and unloading CNC, presses and packaging lines on the shifts nobody wants.</p></div>
+        <div class="use"><span class="pill">Pilots open</span><h3>Kitting and packing</h3><p>Repetitive pick, pack and label work at e-commerce and 3PL sites.</p></div>
+        <div class="use"><span class="pill soon">Exploring</span><h3>Retail back-of-store</h3><p>Replenishment, returns handling and stockroom work outside opening hours.</p></div>
+        <div class="use"><span class="pill soon">Exploring</span><h3>Hospitality</h3><p>Back-of-house logistics in hotels, venues and large kitchens.</p></div>
+        <div class="use"><span class="pill soon">Exploring</span><h3>Inspection rounds</h3><p>Patrols, readings and checks in plants, terminals and data centres.</p></div>
       </div>
     </div>
   </section>
 
   <!-- WHY HUMANIST -->
-  <section id="why" class="dark">
+  <section id="why" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div class="wrap">
       <div class="manifesto">
         <div>
-          <div class="eyebrow">Why Humanist</div>
-          <h2 style="margin-bottom:22px">Machines for the work. People for the judgement.</h2>
-          <p>The name is the promise. <strong>We put robots to work for people, not instead of them.</strong> The jobs we automate are the ones that wear bodies down and minds out: the night-shift scrub, the thousandth pallet, the patrol at three in the morning.</p>
-          <p>Every Humanist robot runs under a named person on your team. They decide what it does, when it stops and whether it stays. We build the tools; your people stay in charge.</p>
-          <p>We are based in Amsterdam and work across the Netherlands.</p>
+          <div class="mono" style="margin-bottom:18px">Why Humanist</div>
+          <h2 style="margin-bottom:24px">Machines for the work. <span class="chrome">People for the judgement.</span></h2>
+          <p>The name is the promise. <strong>We put humanoids to work for people, not instead of them.</strong> The jobs we automate are the ones that wear bodies down and minds out: the night shift, the thousandth tote, the press that never stops.</p>
+          <p>Every Humanist unit runs under a named person on your team. They decide what it does, when it stops and whether it stays. We supply the machine; your people stay in charge.</p>
+          <p>Based in Amsterdam. Working across the Netherlands.</p>
         </div>
         <div class="principles">
           <div class="principle"><div class="n">01</div><div><h3>Humans in charge</h3><p>A person on your floor owns the robot. Always.</p></div></div>
-          <div class="principle"><div class="n">02</div><div><h3>Honest about what works</h3><p>We test before we rent. If the machine is not ready, we tell you.</p></div></div>
-          <div class="principle"><div class="n">03</div><div><h3>Pay for work, not hardware</h3><p>You rent an outcome. The depreciation, downtime and upgrades are our problem.</p></div></div>
-          <div class="principle"><div class="n">04</div><div><h3>Independent</h3><p>We are not tied to one manufacturer, so you get the best machine for the task.</p></div></div>
+          <div class="principle"><div class="n">02</div><div><h3>Honest about what works</h3><p>We test before we rent. If the platform is not ready for your task, we tell you.</p></div></div>
+          <div class="principle"><div class="n">03</div><div><h3>Pay for work, not hardware</h3><p>You rent an outcome. Depreciation, downtime and upgrades are our problem.</p></div></div>
+          <div class="principle"><div class="n">04</div><div><h3>Independent</h3><p>Not tied to one manufacturer, so you get the best machine for the task, and the next one when it comes.</p></div></div>
         </div>
       </div>
     </div>
@@ -372,9 +394,9 @@
   <section id="contact">
     <div class="wrap contact">
       <div class="contact-side">
-        <div class="eyebrow">Talk to us</div>
-        <h2>Start with one task.</h2>
-        <p>Tell us the job you would hand to a robot tomorrow. We reply within one working day with an honest view on whether it can be done, with which machine, and what a four-week pilot would cost.</p>
+        <div class="mono" style="margin-bottom:18px">Request a pilot</div>
+        <h2>Start with <span class="chrome">one task.</span></h2>
+        <p>Tell us the job you would hand to a humanoid tomorrow. We reply within one working day with an honest view on whether it can be done, on which platform, and what a pilot would cost.</p>
         <p class="big"><a href="mailto:hello@humanist.works">hello@humanist.works</a></p>
         <p>Amsterdam, the Netherlands</p>
       </div>
@@ -386,8 +408,8 @@
         <label for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
         <label for="task">The task</label>
-        <textarea id="task" name="task" placeholder="For example: scrub 4,000 m² of warehouse floor every night, currently two people, 5 hours."></textarea>
-        <button class="btn btn-primary" type="submit">Send</button>
+        <textarea id="task" name="task" placeholder="For example: move 1,200 totes a night between inbound and the pick zone, currently two people, 8 hours."></textarea>
+        <button class="btn btn-chrome" type="submit">Send request</button>
         <div class="form-note">Opens in your email client. No tracking, no newsletter.</div>
       </form>
     </div>
@@ -397,7 +419,7 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top"><span class="dot"></span>HUMANIST <span class="sub">AI</span></a>
+    <a class="brand" href="#top"><span class="ring"></span>HUMANIST <span class="sub">AI</span></a>
     <div>© 2026 Humanist AI · Amsterdam · <a href="mailto:hello@humanist.works">hello@humanist.works</a></div>
   </div>
 </footer>
